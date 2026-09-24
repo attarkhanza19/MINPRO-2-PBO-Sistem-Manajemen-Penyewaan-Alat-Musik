@@ -165,4 +165,39 @@ Bahan         : Kayu Jati
 ```
 Menu Lihat Alat digunakan untuk menampilkan seluruh data alat musik yang tersimpan di dalam sistem. Pada tampilan tersebut terdapat tiga data alat, yaitu Gitar Akustik, Keyboard, dan Gitar Spanyol Rata kanan. Setiap data menampilkan informasi seperti ID, nama, jenis, harga sewa, dan status.
 
-Selain data umum, program juga menampilkan atribut tambahan berdasarkan jenis alat. Pada alat musik akustik ditampilkan bahan, sedangkan pada alat musik elektrik ditampilkan daya dalam Watt. Data tersebut ditampilkan menggunakan perulangan sehingga seluruh isi ArrayList daftarAlat dapat ditampilkan secara berurutan.   
+Selain data umum, program juga menampilkan atribut tambahan berdasarkan jenis alat. Pada alat musik akustik ditampilkan bahan, sedangkan pada alat musik elektrik ditampilkan daya dalam Watt. Data tersebut ditampilkan menggunakan perulangan sehingga seluruh isi ArrayList daftarAlat dapat ditampilkan secara berurutan.
+
+5. Ubah Alat
+```
+===== DATA ALAT MUSIK =====
+1. Tambah Alat
+2. Lihat Alat
+3. Ubah Alat
+4. Hapus Alat
+5. Kembali
+Pilih menu: 3
+
+Masukkan ID alat yang ingin diubah: GTR-002
+Nama Alat baru: Gitar Spanyol Rata kanan
+Jenis Alat baru: Gitar
+Harga Sewa baru: 120000
+Status (Ready/Disewa): Disewa
+Bahan baru: Kayu Jati
+Data berhasil diubah.
+```
+Menu Ubah Alat digunakan untuk memperbarui data alat musik yang sudah tersimpan berdasarkan ID alat. Pada contoh ini, pengguna memilih ID GTR-002, kemudian memasukkan data baru berupa nama alat, jenis alat, harga sewa, status, dan bahan. Status alat diubah dari Ready menjadi Disewa. Setelah seluruh data berhasil diperbarui, program menampilkan pesan "Data berhasil diubah."
+
+6. Hapus Alat
+```
+===== DATA ALAT MUSIK =====
+1. Tambah Alat
+2. Lihat Alat
+3. Ubah Alat
+4. Hapus Alat
+5. Kembali
+Pilih menu: 4
+
+Masukkan ID alat yang ingin dihapus: GTR-002
+Data alat berhasil dihapus.
+```
+Menu Hapus Alat digunakan untuk menghapus data alat musik yang sudah tersimpan berdasarkan ID alat. Pada contoh ini, pengguna memasukkan ID GTR-002 untuk memilih data Gitar Spanyol Rata kanan yang akan dihapus. Setelah ID ditemukan, program menghapus data tersebut dari ArrayList daftarAlat dan menampilkan pesan "Data alat berhasil dihapus."
