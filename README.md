@@ -201,3 +201,176 @@ Masukkan ID alat yang ingin dihapus: GTR-002
 Data alat berhasil dihapus.
 ```
 Menu Hapus Alat digunakan untuk menghapus data alat musik yang sudah tersimpan berdasarkan ID alat. Pada contoh ini, pengguna memasukkan ID GTR-002 untuk memilih data Gitar Spanyol Rata kanan yang akan dihapus. Setelah ID ditemukan, program menghapus data tersebut dari ArrayList daftarAlat dan menampilkan pesan "Data alat berhasil dihapus."
+
+7. Kelola Data Pelanggan
+```
+===== DATA PELANGGAN =====
+1. Tambah Pelanggan
+2. Lihat Pelanggan
+3. Ubah Pelanggan
+4. Hapus Pelanggan
+5. Kembali
+Pilih menu:
+```
+Menu Data Pelanggan digunakan untuk mengelola data pelanggan yang menggunakan layanan penyewaan alat musik. Pengguna dapat memilih Tambah Pelanggan untuk memasukkan data pelanggan baru, Lihat Pelanggan untuk menampilkan data yang tersimpan, Ubah Pelanggan untuk memperbarui data pelanggan berdasarkan ID, dan Hapus Pelanggan untuk menghapus data pelanggan. Pilihan Kembali digunakan untuk kembali ke menu utama.
+
+8. Tambah Pelanggan
+```
+===== DATA PELANGGAN =====
+1. Tambah Pelanggan
+2. Lihat Pelanggan
+3. Ubah Pelanggan
+4. Hapus Pelanggan
+5. Kembali
+Pilih menu: 1
+
+===== TAMBAH PELANGGAN =====
+ID Pelanggan: PLN-002
+Nama Pelanggan: Ibrah
+No. Telepon: 0831231941
+Alamat: Samarinda Seberang
+Data pelanggan berhasil ditambahkan.
+```
+Menu Tambah Pelanggan digunakan untuk menambahkan data pelanggan baru ke dalam sistem. Pada contoh ini, pengguna memasukkan ID pelanggan PLN-002, nama Ibrah, nomor telepon, dan alamat Samarinda Seberang. Setelah data dinyatakan valid, program membuat object Pelanggan dan menyimpannya ke dalam ArrayList daftarPelanggan. Program kemudian menampilkan pesan "Data pelanggan berhasil ditambahkan."
+
+9. Lihat Pelanggan
+```
+===== DATA PELANGGAN =====
+1. Tambah Pelanggan
+2. Lihat Pelanggan
+3. Ubah Pelanggan
+4. Hapus Pelanggan
+5. Kembali
+Pilih menu: 2
+
+===== DAFTAR PELANGGAN =====
+
+Data ke-1
+ID Pelanggan : PLN-001
+Nama         : Dilan
+No. Telepon  : 08882293918
+Alamat       : Samarinda
+-----------------------------
+
+Data ke-2
+ID Pelanggan : PLN-002
+Nama         : Ibrah
+No. Telepon  : 0831231941
+Alamat       : Samarinda Seberang
+-----------------------------
+```
+Menu Lihat Pelanggan digunakan untuk menampilkan seluruh data pelanggan yang tersimpan dalam sistem. Pada contoh ini terdapat dua data pelanggan, yaitu PLN-001 dengan nama Dilan dan PLN-002 dengan nama Ibrah. Setiap data menampilkan ID pelanggan, nama, nomor telepon, dan alamat. Data ditampilkan menggunakan perulangan sehingga seluruh isi ArrayList daftarPelanggan dapat ditampilkan secara berurutan.
+
+10. Ubah Pelanggan
+```
+===== DATA PELANGGAN =====
+1. Tambah Pelanggan
+2. Lihat Pelanggan
+3. Ubah Pelanggan
+4. Hapus Pelanggan
+5. Kembali
+Pilih menu: 3
+
+Masukkan ID pelanggan yang ingin diubah: PLN-002
+Nama baru: Ibrah Baswedan
+No. Telepon baru: 0831231941
+Alamat baru: Samarinda Seberang
+Data berhasil diubah.
+```
+Menu Ubah Pelanggan digunakan untuk memperbarui data pelanggan yang sudah tersimpan berdasarkan ID pelanggan. Pada contoh ini, pengguna memilih ID PLN-002, kemudian mengubah nama pelanggan menjadi Ibrah Baswedan serta memasukkan kembali nomor telepon dan alamat. Setelah data berhasil diperbarui, program menampilkan pesan "Data berhasil diubah."
+
+11. Hapus Pelanggan
+```
+===== DATA PELANGGAN =====
+1. Tambah Pelanggan
+2. Lihat Pelanggan
+3. Ubah Pelanggan
+4. Hapus Pelanggan
+5. Kembali
+Pilih menu: 4
+
+Masukkan ID pelanggan yang ingin dihapus: PLN-003
+Data pelanggan berhasil dihapus.
+```
+Menu Ubah Pelanggan digunakan untuk memperbarui data pelanggan yang sudah tersimpan berdasarkan ID pelanggan. Pada contoh ini, pengguna memilih ID PLN-002, kemudian mengubah nama pelanggan menjadi Ibrah Baswedan serta memasukkan kembali nomor telepon dan alamat. Setelah data berhasil diperbarui menggunakan setter, program menampilkan pesan "Data berhasil diubah."
+
+12. Kelola Data Penyewaan
+```
+===== DATA PENYEWAAN =====
+1. Tambah Penyewaan
+2. Lihat Penyewaan
+3. Ubah Penyewaan
+4. Hapus Penyewaan
+5. Kembali
+Pilih menu:
+```
+Menu Data Penyewaan digunakan untuk mengelola transaksi penyewaan alat musik. Pengguna dapat memilih Tambah Penyewaan untuk membuat transaksi baru, Lihat Penyewaan untuk menampilkan transaksi yang tersimpan, Ubah Penyewaan untuk memperbarui data transaksi, dan Hapus Penyewaan untuk menghapus transaksi. Pilihan Kembali digunakan untuk kembali ke menu utama.
+
+13. Tambah Penyewaan
+```
+===== DATA PENYEWAAN =====
+1. Tambah Penyewaan
+2. Lihat Penyewaan
+3. Ubah Penyewaan
+4. Hapus Penyewaan
+5. Kembali
+Pilih menu: 1
+
+===== TAMBAH PENYEWAAN =====
+ID Penyewaan: SW-002
+ID Pelanggan: PLN-002
+ID Alat: GTR-001
+Lama Sewa (hari): 2
+Penyewaan berhasil ditambahkan.
+Total Harga: Rp200000.0
+```
+Menu Tambah Penyewaan digunakan untuk menambahkan transaksi penyewaan alat musik baru ke dalam sistem. Pada contoh ini, pengguna memasukkan ID penyewaan SW-002, ID pelanggan PLN-002, ID alat GTR-001, dan lama sewa selama 2 hari. Program kemudian mengecek data pelanggan dan alat berdasarkan ID, mengambil harga sewa alat sebesar Rp100.000 per hari, lalu menghitung total harga menjadi Rp200.000. Setelah transaksi berhasil ditambahkan, status alat GTR-001 juga berubah menjadi Disewa.
+
+14. Lihat Penyewaan
+```
+===== DATA PENYEWAAN =====
+1. Tambah Penyewaan
+2. Lihat Penyewaan
+3. Ubah Penyewaan
+4. Hapus Penyewaan
+5. Kembali
+Pilih menu: 2
+
+===== DAFTAR PENYEWAAN =====
+
+Data ke-1
+ID Penyewaan : SW-001
+ID Pelanggan : PLN-001
+ID Alat      : GTR-001
+Lama Sewa    : 2 hari
+Total Harga  : Rp200000.0
+-----------------------------
+
+Data ke-2
+ID Penyewaan : SW-002
+ID Pelanggan : PLN-002
+ID Alat      : GTR-002
+Lama Sewa    : 1 hari
+Total Harga  : Rp120000.0
+-----------------------------
+```
+Menu Lihat Penyewaan digunakan untuk menampilkan seluruh transaksi penyewaan yang tersimpan dalam sistem. Pada contoh ini terdapat dua transaksi, yaitu SW-001 dan SW-002. Transaksi SW-001 menggunakan alat GTR-001 selama 2 hari dengan total harga Rp200.000, sedangkan transaksi SW-002 menggunakan alat GTR-002 selama 1 hari dengan total harga Rp120.000. Setiap transaksi menampilkan ID penyewaan, ID pelanggan, ID alat, lama sewa, dan total harga. Data ditampilkan menggunakan perulangan sehingga seluruh isi ArrayList daftarPenyewaan dapat ditampilkan secara berurutan.
+
+15. Ubah Penyewaan
+```
+===== DATA PENYEWAAN =====
+1. Tambah Penyewaan
+2. Lihat Penyewaan
+3. Ubah Penyewaan
+4. Hapus Penyewaan
+5. Kembali
+Pilih menu: 3
+
+Masukkan ID penyewaan yang ingin diubah: SW-002
+ID Pelanggan baru: PLN-002
+ID Alat baru: GTR-001
+Lama Sewa baru: 3
+Total Harga baru: Rp300000.0
+Data berhasil diubah.
+```
+Menu Ubah Penyewaan digunakan untuk memperbarui data transaksi penyewaan yang sudah tersimpan berdasarkan ID penyewaan. Pada contoh ini, pengguna memilih ID SW-002, kemudian memasukkan ID pelanggan PLN-002, mengganti ID alat menjadi GTR-001, dan mengubah lama sewa menjadi 3 hari. Program kemudian menghitung kembali total harga berdasarkan harga sewa alat GTR-001, yaitu Rp100.000 per hari, sehingga total harga menjadi Rp300.000. Setelah data berhasil diperbarui, program menampilkan pesan "Data berhasil diubah."
