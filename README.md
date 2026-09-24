@@ -478,7 +478,7 @@ public void setNamaAlat(String namaAlat) {
 ```
 Penerapan encapsulation juga terdapat pada class Pelanggan, Penyewaan, AlatMusikAkustik, dan AlatMusikElektrik. Dengan penerapan ini, data dalam object dapat dikontrol melalui method yang telah disediakan.
 
-### 2. Inheritance
+#### 2. Inheritance
 Inheritance diterapkan dengan membuat class AlatMusik sebagai superclass, kemudian membuat dua subclass yaitu AlatMusikAkustik dan AlatMusikElektrik.
 
 jadi kurang lebih struktrunya seperti ini;
@@ -503,3 +503,33 @@ Constructor subclass juga menggunakan super() untuk memanggil constructor dari s
 super(idAlat, namaAlat, jenisAlat, hargaSewa, status);
 ```
 Dengan demikian, inheritance pada program digunakan untuk mengurangi pengulangan atribut dan method yang sama serta membedakan karakteristik antara alat musik akustik dan elektrik.
+
+### Polymorphism
+Program menerapkan konsep polymorphism pada class AlatMusik. Polymorphism diterapkan melalui method tampilkanData() yang terdapat pada superclass AlatMusik dan kemudian dioverride oleh subclass AlatMusikAkustik dan AlatMusikElektrik
+
+Pada superclass AlatMusik terdapat method:
+```
+public void tampilkanData() {
+    System.out.println("ID Alat       : " + idAlat);
+    System.out.println("Nama Alat     : " + namaAlat);
+    System.out.println("Jenis Alat    : " + jenisAlat);
+    System.out.println("Harga Sewa    : Rp" + hargaSewa);
+    System.out.println("Status        : " + status);
+}
+```
+Kemudian pada subclass AlatMusikAkustik, method tersebut dioverride untuk menambahkan informasi bahan:
+```
+@Override
+public void tampilkanData() {
+    super.tampilkanData();
+    System.out.println("Bahan         : " + bahan);
+}
+```
+Sedangkan pada AlatMusikElektrik, method yang sama dioverride untuk menampilkan daya:
+```
+@Override
+public void tampilkanData() {
+    super.tampilkanData();
+    System.out.println("Daya          : " + daya + " Watt");
+}
+```
