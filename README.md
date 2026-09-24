@@ -450,3 +450,30 @@ Yang Anda masukkan tidak valid. Angka harus lebih dari 0.
 Bagian ini menunjukkan fitur validasi input angka positif pada saat menambahkan alat musik elektrik. Pengguna memasukkan nilai daya sebesar -12 Watt, tetapi program hanya menerima angka yang lebih besar dari 0.
 
 Karena nilai yang dimasukkan tidak memenuhi ketentuan, program menampilkan pesan "Yang Anda masukkan tidak valid. Angka harus lebih dari 0." dan meminta pengguna memasukkan nilai daya kembali.
+
+### Penjelasan Penerapan Encapsulation dan Inheritance
+
+#### 1. Encapsulation
+Encapsulation diterapkan dengan membatasi akses langsung terhadap atribut pada setiap class menggunakan access modifier private. Data tersebut kemudian dapat diakses dan diubah melalui method getter dan setter.
+
+Contohnya pada class AlatMusik
+```
+private String idAlat;
+private String namaAlat;
+private String jenisAlat;
+private double hargaSewa;
+private String status;
+```
+Atribut tersebut tidak dapat diakses secara langsung dari class lain. Untuk mengambil nilai atribut digunakan getter, misalnya
+```
+public String getNamaAlat() {
+    return namaAlat;
+}
+```
+Sedangkan untuk mengubah nilai atribut digunakan setter
+```
+public void setNamaAlat(String namaAlat) {
+    this.namaAlat = namaAlat;
+}
+```
+Penerapan encapsulation juga terdapat pada class Pelanggan, Penyewaan, AlatMusikAkustik, dan AlatMusikElektrik. Dengan penerapan ini, data dalam object dapat dikontrol melalui method yang telah disediakan.
