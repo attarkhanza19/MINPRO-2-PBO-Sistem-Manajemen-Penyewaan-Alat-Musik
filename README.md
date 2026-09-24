@@ -477,3 +477,29 @@ public void setNamaAlat(String namaAlat) {
 }
 ```
 Penerapan encapsulation juga terdapat pada class Pelanggan, Penyewaan, AlatMusikAkustik, dan AlatMusikElektrik. Dengan penerapan ini, data dalam object dapat dikontrol melalui method yang telah disediakan.
+
+### 2. Inheritance
+Inheritance diterapkan dengan membuat class AlatMusik sebagai superclass, kemudian membuat dua subclass yaitu AlatMusikAkustik dan AlatMusikElektrik.
+
+jadi kurang lebih struktrunya seperti ini;
+```
+              AlatMusik
+              /       \
+             /         \
+AlatMusikAkustik   AlatMusikElektrik
+```
+Class AlatMusikAkustik dan AlatMusikElektrik menggunakan keyword extends:
+```
+public class AlatMusikAkustik extends AlatMusik
+```
+dan
+```
+public class AlatMusikElektrik extends AlatMusik
+```
+Dengan inheritance tersebut, kedua subclass dapat menggunakan atribut dan method yang dimiliki oleh AlatMusik. Selain itu, masing-masing subclass memiliki atribut tambahan sesuai jenis alat. AlatMusikAkustik memiliki atribut bahan, sedangkan AlatMusikElektrik memiliki atribut daya.
+
+Constructor subclass juga menggunakan super() untuk memanggil constructor dari superclass:
+```
+super(idAlat, namaAlat, jenisAlat, hargaSewa, status);
+```
+Dengan demikian, inheritance pada program digunakan untuk mengurangi pengulangan atribut dan method yang sama serta membedakan karakteristik antara alat musik akustik dan elektrik.
