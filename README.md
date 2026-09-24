@@ -51,3 +51,22 @@ Alur setiap menu:
    Program memiliki validasi untuk memastikan data yang dimasukkan sesuai dengan ketentuan. Contohnya, input nama hanya dapat berisi huruf, nomor telepon harus berupa angka dengan minimal 10 digit, sedangkan harga, lama sewa, dan daya harus berupa angka positif.
 
    Jika pengguna memasukkan data yang tidak sesuai, program menampilkan pesan "Yang Anda masukkan tidak valid" dan meminta pengguna memasukkan data kembali.
+
+9. Dummy Data
+
+    Program menyediakan beberapa dummy data pada saat pertama kali dijalankan. Dummy data digunakan agar pengguna dapat langsung melihat isi data tanpa harus
+    melakukan input terlebih dahulu.
+
+    Dummy data terdapat pada daftarAlat, daftarPelanggan, dan daftarPenyewaan.
+
+11. Inheritance dan Polymorphism
+
+    Program menerapkan inheritance dengan menggunakan AlatMusik sebagai superclass dan AlatMusikAkustik serta AlatMusikElektrik sebagai subclass.
+
+    Program juga menerapkan polymorphism melalui method tampilkanData() yang dioverride pada kedua subclass. Object dari subclass dapat disimpan dalam
+    ArrayList<AlatMusik> dan method tampilkanData() akan dijalankan sesuai dengan jenis object tersebut.
+
+12. Encapsulation
+
+    Data pada setiap class menggunakan access modifier private sehingga tidak dapat diakses secara langsung dari luar class. Untuk mengakses dan mengubah data,        program menggunakan getter dan setter.
+    
