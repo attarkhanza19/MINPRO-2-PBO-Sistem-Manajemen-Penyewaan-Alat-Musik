@@ -390,4 +390,63 @@ Data penyewaan berhasil dihapus.
 ```
 Menu Hapus Penyewaan digunakan untuk menghapus transaksi penyewaan yang sudah tersimpan berdasarkan ID penyewaan. Pada contoh ini, pengguna memasukkan ID SW-002 untuk memilih transaksi yang akan dihapus. Setelah ID ditemukan, program menghapus data penyewaan dari ArrayList daftarPenyewaan dan menampilkan pesan "Data penyewaan berhasil dihapus." Selain itu, status alat yang terkait dengan transaksi tersebut dikembalikan menjadi Ready sehingga dapat disewakan kembali.
 
-17. 
+17. Validasi Input
+```
+=================================
+ SISTEM PENYEWAAN ALAT MUSIK
+=================================
+1. Kelola Data Alat Musik
+2. Kelola Data Pelanggan
+3. Kelola Data Penyewaan
+4. Keluar
+=================================
+Pilih menu: 6
+Yang Anda masukkan tidak valid.
+
+=================================
+ SISTEM PENYEWAAN ALAT MUSIK
+=================================
+1. Kelola Data Alat Musik
+2. Kelola Data Pelanggan
+3. Kelola Data Penyewaan
+4. Keluar
+=================================
+Pilih menu: abc
+Yang Anda masukkan tidak valid. Harus berupa angka.
+```
+Bagian ini menunjukkan fitur validasi input pada menu utama. Program akan memeriksa input yang diberikan pengguna sebelum menjalankan pilihan menu.
+
+Pada percobaan pertama, pengguna memasukkan angka 6, sedangkan pilihan yang tersedia hanya 1–4. Program kemudian menampilkan pesan "Yang Anda masukkan tidak valid." dan kembali menampilkan menu utama.
+
+Pada percobaan kedua, pengguna memasukkan abc. Karena input menu harus berupa angka, program menangkap kesalahan tersebut dan menampilkan pesan "Yang Anda masukkan tidak valid. Harus berupa angka." Program kemudian meminta input kembali.
+
+Fitur ini dibuat menggunakan perulangan sehingga program tidak langsung berhenti ketika pengguna memasukkan input yang salah.
+
+```
+===== TAMBAH ALAT MUSIK =====
+ID Alat: -12
+Nama Alat: Gtr
+Jenis Alat: gtr
+Harga Sewa per Hari: 3123
+
+Jenis Alat Musik:
+1. Akustik
+2. Elektrik
+Pilih jenis: 2
+Status (Ready/Disewa): redi
+Yang Anda masukkan tidak valid. Status hanya boleh Ready atau Disewa.
+```
+Bagian ini menunjukkan fitur validasi input pada saat pengguna menambahkan alat musik. Pengguna memasukkan status redi, tetapi program hanya menerima status Ready atau Disewa.
+
+Karena input tidak sesuai dengan pilihan yang tersedia, program menampilkan pesan "Yang Anda masukkan tidak valid. Status hanya boleh Ready atau Disewa." dan meminta pengguna memasukkan status kembali.
+
+Validasi ini digunakan agar data yang disimpan dalam program tetap sesuai dengan ketentuan yang telah ditentukan.
+
+```
+Status (Ready/Disewa): disewa
+Daya Alat (Watt): -12
+Yang Anda masukkan tidak valid. Angka harus lebih dari 0.
+```
+Bagian ini menunjukkan fitur validasi input angka positif pada saat menambahkan alat musik elektrik. Pengguna memasukkan nilai daya sebesar -12 Watt, tetapi program hanya menerima angka yang lebih besar dari 0.
+
+Karena nilai yang dimasukkan tidak memenuhi ketentuan, program menampilkan pesan "Yang Anda masukkan tidak valid. Angka harus lebih dari 0." dan meminta pengguna memasukkan nilai daya kembali.
