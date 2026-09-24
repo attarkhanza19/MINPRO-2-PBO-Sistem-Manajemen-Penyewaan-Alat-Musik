@@ -69,4 +69,100 @@ Alur setiap menu:
 12. Encapsulation
 
     Data pada setiap class menggunakan access modifier private sehingga tidak dapat diakses secara langsung dari luar class. Untuk mengakses dan mengubah data,        program menggunakan getter dan setter.
-    
+
+### Dokumentasi Alur Program
+1. Tampilan Menu Utama
+```
+=================================
+ SISTEM PENYEWAAN ALAT MUSIK
+=================================
+1. Kelola Data Alat Musik
+2. Kelola Data Pelanggan
+3. Kelola Data Penyewaan
+4. Keluar
+=================================
+Pilih menu:
+```
+
+Menu utama berfungsi sebagai halaman awal untuk mengakses fitur-fitur dalam sistem penyewaan alat musik. Kelola Data Alat Musik digunakan untuk menambah, melihat, mengubah, dan menghapus data alat musik yang tersedia untuk disewa. Kelola Data Pelanggan digunakan untuk mengelola data pelanggan yang melakukan penyewaan, seperti ID, nama, nomor telepon, dan alamat. Kelola Data Penyewaan digunakan untuk mencatat dan mengelola transaksi penyewaan dengan memasukkan data pelanggan, alat musik, serta lama penyewaan dan menghitung total harga. Sedangkan Keluar digunakan untuk mengakhiri program setelah pengguna selesai menggunakan sistem.
+
+2. Kelola Data Alat Musik
+```
+===== DATA ALAT MUSIK =====
+1. Tambah Alat
+2. Lihat Alat
+3. Ubah Alat
+4. Hapus Alat
+5. Kembali
+Pilih menu:
+```
+Bagian ini merupakan submenu untuk mengelola data alat musik. Pengguna dapat memilih operasi yang ingin dilakukan terhadap data alat musik, yaitu Tambah Alat untuk memasukkan data alat musik baru, Lihat Alat untuk menampilkan data yang tersimpan, Ubah Alat untuk memperbarui data berdasarkan ID alat, dan Hapus Alat untuk menghapus data alat dari sistem. Sementara itu, pilihan Kembali digunakan untuk kembali ke menu utama sistem penyewaan alat musik.
+
+3. Tambah Alat
+```
+===== DATA ALAT MUSIK =====
+1. Tambah Alat
+2. Lihat Alat
+3. Ubah Alat
+4. Hapus Alat
+5. Kembali
+Pilih menu: 1
+
+===== TAMBAH ALAT MUSIK =====
+ID Alat: GTR-002
+Nama Alat: Gitar Spanyol Rata kanan
+Jenis Alat: Gitar
+Harga Sewa per Hari: 120000
+
+Jenis Alat Musik:
+1. Akustik
+2. Elektrik
+Pilih jenis: 1
+Status (Ready/Disewa): Ready
+Bahan Alat: Kayu Jati
+Data alat berhasil ditambahkan.
+```
+Menu Tambah Alat digunakan untuk menambahkan data alat musik baru ke dalam sistem penyewaan. Pengguna memasukkan ID alat, nama alat, jenis alat, harga sewa, serta memilih jenis alat musik apakah Akustik atau Elektrik. Pengguna juga memasukkan status dan data tambahan sesuai jenis alat. Pada contoh ini, pengguna menambahkan Gitar Spanyol Rata kanan dengan ID GTR-002, harga sewa Rp120.000 per hari, berjenis akustik, berstatus Ready, dan berbahan Kayu Jati. Setelah data valid, program membuat object AlatMusikAkustik dan menyimpannya ke dalam ArrayList daftarAlat, kemudian menampilkan pesan bahwa data berhasil ditambahkan.
+
+4. Lihat Alat
+```
+===== DATA ALAT MUSIK =====
+1. Tambah Alat
+2. Lihat Alat
+3. Ubah Alat
+4. Hapus Alat
+5. Kembali
+Pilih menu: 2
+
+===== DAFTAR ALAT MUSIK =====
+
+Data ke-1
+ID Alat       : GTR-001
+Nama Alat     : Gitar Akustik
+Jenis Alat    : Gitar
+Harga Sewa    : Rp100000.0
+Status        : Ready
+Bahan         : Kayu
+-----------------------------
+
+Data ke-2
+ID Alat       : KBD-001
+Nama Alat     : Keyboard
+Jenis Alat    : Keyboard
+Harga Sewa    : Rp150000.0
+Status        : Ready
+Daya          : 220 Watt
+-----------------------------
+
+Data ke-3
+ID Alat       : GTR-002
+Nama Alat     : Gitar Spanyol Rata kanan
+Jenis Alat    : Gitar
+Harga Sewa    : Rp120000.0
+Status        : Ready
+Bahan         : Kayu Jati
+-----------------------------
+```
+Menu Lihat Alat digunakan untuk menampilkan seluruh data alat musik yang tersimpan di dalam sistem. Pada tampilan tersebut terdapat tiga data alat, yaitu Gitar Akustik, Keyboard, dan Gitar Spanyol Rata kanan. Setiap data menampilkan informasi seperti ID, nama, jenis, harga sewa, dan status.
+
+Selain data umum, program juga menampilkan atribut tambahan berdasarkan jenis alat. Pada alat musik akustik ditampilkan bahan, sedangkan pada alat musik elektrik ditampilkan daya dalam Watt. Data tersebut ditampilkan menggunakan perulangan sehingga seluruh isi ArrayList daftarAlat dapat ditampilkan secara berurutan.   
