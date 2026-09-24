@@ -374,3 +374,20 @@ Total Harga baru: Rp300000.0
 Data berhasil diubah.
 ```
 Menu Ubah Penyewaan digunakan untuk memperbarui data transaksi penyewaan yang sudah tersimpan berdasarkan ID penyewaan. Pada contoh ini, pengguna memilih ID SW-002, kemudian memasukkan ID pelanggan PLN-002, mengganti ID alat menjadi GTR-001, dan mengubah lama sewa menjadi 3 hari. Program kemudian menghitung kembali total harga berdasarkan harga sewa alat GTR-001, yaitu Rp100.000 per hari, sehingga total harga menjadi Rp300.000. Setelah data berhasil diperbarui, program menampilkan pesan "Data berhasil diubah."
+
+16. Hapus Penyewaan
+```
+===== DATA PENYEWAAN =====
+1. Tambah Penyewaan
+2. Lihat Penyewaan
+3. Ubah Penyewaan
+4. Hapus Penyewaan
+5. Kembali
+Pilih menu: 4
+
+Masukkan ID penyewaan yang ingin dihapus: SW-002
+Data penyewaan berhasil dihapus.
+```
+Menu Hapus Penyewaan digunakan untuk menghapus transaksi penyewaan yang sudah tersimpan berdasarkan ID penyewaan. Pada contoh ini, pengguna memasukkan ID SW-002 untuk memilih transaksi yang akan dihapus. Setelah ID ditemukan, program menghapus data penyewaan dari ArrayList daftarPenyewaan dan menampilkan pesan "Data penyewaan berhasil dihapus." Selain itu, status alat yang terkait dengan transaksi tersebut dikembalikan menjadi Ready sehingga dapat disewakan kembali.
+
+17. 
